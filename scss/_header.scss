@@ -1,0 +1,57 @@
+.site-header {
+	overflow: hidden;
+	// padding: 3em 0;
+	position:relative;
+	height: 178px;
+	border-bottom: 2px solid $color2;
+	background-color: rgba(0,0,0,.75);
+}
+
+.custom-header {
+	position: absolute;
+	left: 50%;
+	margin-left: -100px;
+	margin-top: 10px;
+	opacity: .75
+}
+
+.logo {
+	@include span-columns(6);
+	@include shift(3);
+	color: $color2;
+	position: relative;
+	z-index: 2;
+	text-indent: -99999px;
+
+	.blog-name {
+		margin-bottom: 0.2em;
+		text-align: center;
+		text-shadow: 0 0 .5em $color1;
+	}
+
+	.blog-description {
+		margin-bottom: 1.5em;
+		text-align: center;
+		font-style: italic;
+		text-shadow: 0 0 .5em $color1;
+	}
+}
+
+.slideshow, #slideshow {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.slide {
+    width: 100%;
+    height: auto;
+}
+.slide .posts > a {
+    position:absolute;
+    z-index: 5;
+    height:100%;
+    display:block;
+}
+#slideshow, .slideshow, .slide, .slide .posts > a {
+        height: auto;
+    }
